@@ -1,0 +1,41 @@
+ALGORITHM phrase
+//déclaration des variables
+VAR
+   c :CHAR; //la phrase
+   nb_characters: INTEGER :=0; //compteur qui indique la longueur de chaîne  //i
+   nb_words : INTEGER := 0; // compteur qui indique le nbr des mots
+   nb_vowels : INTEGER := 0; // compteur qui indique le nbr des voyelles 
+
+BEGIN
+
+//saisie de chaine
+
+  Write('donnée un caractere')
+    Read(c);
+
+
+//incrimentation de compteur (i)
+
+
+//indication si il ya des voyelles dans la chaine
+    WHILE (c <> '.') DO
+        IF (uppercase(c)='A') OR (uppercase(c)='E') 
+            OR (uppercase(c)='I') OR (uppercase(c)='O') 
+            OR (uppercase(c)='U') OR (uppercase(c)='Y') THEN
+            
+            nb_vowels := nb_voyelles + 1 ;
+        END_IF
+
+//nbr des mots
+        IF (c = ' ') THEN
+            nb_words := nb_words + 1;
+        END_IF
+//nbr de caractéres
+        nb_characters := nb_characters + 1;
+    END_WHILE
+
+//affichage
+     Write('length of the sentence = ',nb_characters);
+     Write('number of words  = ',nb_words);
+     Write('number of vowels = ',nb_vowels);
+END.

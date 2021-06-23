@@ -1,0 +1,28 @@
+ALGORITHM caracter
+VAR
+    c:CHAR:='';
+    nb_car,nb_Voy,nb_espace:INTEGER:=0;
+BEGIN
+    set_instructions
+    Read(c);
+    WHILE (c <> '.') DO
+        
+        IF (uppercase(c)='A') OR (uppercase(c)='E') 
+            OR (uppercase(c)='I') OR (uppercase(c)='O') 
+            OR (uppercase(c)='U') OR (uppercase(c)='Y') THEN
+            nb_Voy:=nb_Voy+1;
+            END_IF
+
+        IF (c ==' ') THEN
+            nb_espace=nb_espace+1;
+         END_IF
+         
+         nb_car:=nb_car+1;
+
+    END_WHILE
+
+Write(nb_car + 1);
+Write(nb_espace +1);
+Write(nb_vowels);
+
+END
