@@ -9,9 +9,9 @@ VAR
 BEGIN
 
 //saisie de chaine
-
   Write('donnée un caractere')
     Read(c);
+hellol
 
 
 //incrimentation de compteur (i)
